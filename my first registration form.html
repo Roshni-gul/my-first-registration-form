@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" href="./my first registration form_files/style.css">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REGISTRATION FORM</title>
+</head>
+<body>
+    
+    <h1>REGISTRATION FORM</h1>
+    <h2>USER PERSONAL INFORMATION</h2>
+    <br>
+    <form action="http://127.0.0.1:5500/index.html">
+    <label for="username"><b>Enter your username</b></label><br>
+     <input type="name" name="text" placeholder="username">
+     <br>
+     <br>
+     <label for="password"><b>Enter your password</b></label><br>
+     <input type="password" name="text" id="password">
+     <br>
+     <br>
+     <label for=" cofirm your password"><b>confirm your password</b></label><br>
+     <input type="confirm your password" name="text" id="confirm your password">
+     <br>
+     <br>
+
+     <label for="date"><b>Date of Birth</b></label><br>
+     <input type="date" id="date of birth">
+
+     <br>
+     <br> 
+     <h3>Select your Gender</h3>
+     <input type="radio" name="Gender" id="Male">
+     <label inputfor="male">male</label>
+
+     <input type="radio" name="Gender" id="female">
+     <label inputfor="female">female</label>
+
+     <input type="radio" name="Gender" id="other">
+     <label inputfor="other">other</label>
+     <br>
+     <br>
+     <label for="subject"><b>select your subject</b></label>
+     <br>
+     <select name="subject" id="select your subject">
+               <option value="maths">maths</option>
+               <option value="physics">physics</option>
+               <option value="chemistry">chemistry</option>
+               <option value="computer">computer</option>
+    </select> 
+    <br>
+    <br>
+     <label for="Enter your Address"><b>Enter your address</b></label>
+     <br>
+     <input type="Enter your Address" name="Address" id="Enter your Address">
+     <br>
+     <br>
+     <button type="submit">submit</button>
+     
+
+
+
+
+
+
+
+
+
+     
+
+
+
+    </form>
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
